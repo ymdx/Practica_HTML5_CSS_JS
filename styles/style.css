@@ -1,0 +1,84 @@
+body {
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+	font-family: cv;
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+.navbar {
+	width: 100%;
+	background-color: #F7F7F7;
+	position: fixed;
+	top: 0;
+}
+
+.navbar > .navbar-list {
+	list-style-type: none;
+	margin: 0;
+	float: right;
+	font-size: 0;
+}
+
+.navbar > .navbar-list > .navbar-item {
+	display: inline-block;
+	font-size: 16px;
+}
+
+
+.navbar > .navbar-list > .navbar-item > .navbar-link {
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px;
+	color: rgba(0, 0, 0, 0.92);
+}
+
+.navbar > .navbar-list > .navbar-item.active > .navbar-link {
+	color: #F7F7F7;
+	background-color: #A4A4A4;
+}
+
+.navbar > .navbar-list > .navbar-item > .navbar-link:hover {
+	color: #F7F7F7;
+	background-color: #A4A4A4;
+}
+
+.header > .title {
+	position: absolute;
+	top: 30%;
+	color: white;
+	width: 100%;
+	font-family: cv;
+	text-align: center;
+	font-size: 100px;
+
+}
+
+.header > .title-img {
+	width: 100%;
+	background-image: url("../images/background.jpg");
+	height: 100vh;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.header > .title-cite {
+	position: absolute;
+	top: 52%;
+	color: white;
+	width: 100%;
+	font-family: cv;
+	text-align: center;
+	font-size: 50px;
+}
+
+.clearfix:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
