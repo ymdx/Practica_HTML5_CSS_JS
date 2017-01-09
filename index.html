@@ -5,14 +5,16 @@
     <title>Proyecto CV</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/grid.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
-   		<h1 class="title">Yoel Macia Delgado</h1>
-		<div class="title-img"></div>
-		<p class="title-cite">FULL STACK WEB DEVELOPER</p>
-    </header>   
+        <h1 class="title">Yoel Macia Delgado</h1>
+        <div class="title-img"></div>
+        <p class="title-cite">FULL STACK WEB DEVELOPER</p>
+    </header>
     <nav class="navbar">
         <ul class="navbar-list">
             <li class="navbar-item active">
@@ -35,21 +37,82 @@
             </li>
         </ul>
     </nav>
-    <main>
-        <section id="quien-soy">
-        	
+    <main class="container">
+        <section id="quien-soy" class="about-me clearfix">
+            <div class="cv-foto">
+                FOTO
+            </div>
+            <div class="cv-info">
+                <h2>Quien Soy</h2>
+                <strong>Yoel Macia Delgado</strong>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quas repellat expedita possimus voluptatibus, quae saepe dolorum magni, odio error, ad iure maiores aliquam harum eos dolorem accusantium beatae officiis!
+        		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, iste. Incidunt quasi totam provident illo, illum neque, possimus sed pariatur! Nam ullam dolore voluptas quos dicta a alias ut consectetur.</span>
+            </div>
         </section>
-        <section id="estudios">
-        	
+        <section id="estudios" class="estudios">
+            <div class="cv-estudios">
+                <h2>Estudios</h2>
+                <strong>Yoel Macia Delgado</strong>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quas repellat expedita possimus voluptatibus, quae saepe dolorum magni, odio error, ad iure maiores aliquam harum eos dolorem accusantium beatae officiis!
+        		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, iste. Incidunt quasi totam provident illo, illum neque, possimus sed pariatur! Nam ullam dolore voluptas quos dicta a alias ut consectetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            </div>
         </section>
-        <section id="experiencia">
-        	
+        <section id="experiencia" class="experiencia">
+            <div class="cv-experiencia">
+                <h2>Experiencia</h2>
+                <strong>Yoel Macia Delgado</strong>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quas repellat expedita possimus voluptatibus, quae saepe dolorum magni, odio error, ad iure maiores aliquam harum eos dolorem accusantium beatae officiis!
+        		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, iste. Incidunt quasi totam provident illo, illum neque, possimus sed pariatur! Nam ullam dolore voluptas quos dicta a alias ut consectetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            </div>
         </section>
-        <section id="sobre-mi">
-        	
+        <section id="sobre-mi" class="sobre-mi">
+            <div class="row">
+                <h2>SOBRE MI</h2>
+                <div class="col-4">
+                    <article>
+                        <header>
+                            <h3>Ideas</h3>
+                        </header>
+                        <figure class="article-foto">
+                            <img src="images/ideas.jpg" alt="Foto ideas">
+                        </figure>
+                        <p>Mente abierta y creativa en la que no paran de surgir ideas.</p>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article>
+                        <header>
+                            <h3>Code</h3>
+                        </header>
+                        <figure class="article-foto">
+                            <img src="images/code.jpg" alt="Foto Código">
+                        </figure>
+                        <p>Me encanta el código y todo lo relacionado con la Web.</p>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article>
+                        <header>
+                            <h3>Social</h3>
+                        </header>
+                        <figure class="article-foto">
+                            <img src="images/social.jpg" alt="Foto Social">
+                        </figure>
+                        <p>Soy una persona muy social.</p>
+                    </article>
+                </div>
         </section>
         <section id="contacto">
-        	
         </section>
     </main>
     <footer>Yoel Macia Delgado &copy; 2017 </footer>
