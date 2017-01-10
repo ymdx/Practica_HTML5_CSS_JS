@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 body {
 	margin: 0px;
 	font-family: 'Roboto', sans-serif;
@@ -77,18 +80,15 @@ body {
 
 .about-me > .cv-foto{
 	max-width: 50%;
-	float:left;
 	width: 300px;
-	height: 300px;
-	background-image: url("../images/foto.jpg");
-	background-size: 100% 100%;
+	height: 450px;
+	background-size: 50% 50%;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
 .about-me > .cv-info{
 	max-width: 50%;
-	float:right;
 }
 
 .estudios > .cv-estudios{
@@ -110,6 +110,43 @@ body {
 	max-width: 100%;
 	border-radius: 50%;
 }
+
+.section-content{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.section-content-reverse{
+	background-color: #A4A4A4;
+	color: white;
+	margin-left: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+}
+
+.row-flex{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.tranform-items{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.footer {
+	width: 100%;
+	background-color: #A4A4A4;
+	height: 50px;
+	color: #F7F7F7;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+
 
 .clearfix:after {
 	content: " ";
