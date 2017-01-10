@@ -75,7 +75,7 @@ body {
 	width: 100%;
 	font-family: cv;
 	text-align: center;
-	font-size: 50px;
+	font-size: 45px;
 }
 
 .about-me > .cv-foto{
@@ -93,9 +93,20 @@ body {
 
 .estudios > .cv-estudios{
 	width: 300px;
-	height: 300px;
+	height: 550px;
 	text-align: center;
 	width: 100%;
+	padding: 30px;
+    font-size: 25px;
+    display:table;
+}
+
+.estudios > .cv-estudios > ul {
+    list-style-type: none;
+}
+
+.estudios > .cv-estudios > ul > li {
+    padding: 12px;
 }
 
 .experiencia > .cv-experiencia{
@@ -136,11 +147,17 @@ body {
 	flex-grow: 1;
 }
 
+.col-4 > article > header{
+	display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer {
 	width: 100%;
-	background-color: #A4A4A4;
+	background-color: white;
 	height: 50px;
-	color: #F7F7F7;
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
