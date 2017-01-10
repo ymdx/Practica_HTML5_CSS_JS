@@ -36,6 +36,7 @@ body {
 	text-decoration: none;
 	padding: 20px;
 	color: rgba(0, 0, 0, 0.92);
+	transition: all 0.7s;
 }
 
 .navbar > .navbar-list > .navbar-item.active > .navbar-link {
@@ -139,6 +140,13 @@ body {
 	flex-flow: row wrap;
 }
 
+.row > h2{
+	display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .tranform-items{
 	display: flex;
 	flex-direction: column;
@@ -152,6 +160,53 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+}
+
+.col-4 > article > p{
+	display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-12 > article > header{
+	display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-12 > article > figure{
+	display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-experiencia{
+	-webkit-animation: rotation 3s infinite linear;
+}
+
+.img-experiencia:hover{
+	-webkit-animation: rotation2 3s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+
+.img-experiencia2{
+	-webkit-animation: rotation2 3s infinite linear;
+}
+
+.img-experiencia2:hover{
+	-webkit-animation: rotation 3s infinite linear;
+}
+
+@-webkit-keyframes rotation2 {
+    from {-webkit-transform: rotate(359deg);}
+    to   {-webkit-transform: rotate(0deg);}
 }
 
 .footer {
