@@ -49,6 +49,12 @@ body {
 	background-color: #A4A4A4;
 }
 
+img.cv{
+	height: 55px;
+	width: 55px;
+	padding: 10px;
+}
+
 .header > .title {
 	position: absolute;
 	top: 30%;
