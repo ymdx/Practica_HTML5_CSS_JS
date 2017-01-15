@@ -1,0 +1,50 @@
+#tasksContainer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#tasksContainer .task-item {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  background-color: lightgray;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 1px solid black;
+}
+
+#tasksContainer .task-item button {
+  height: 40px;
+  float: right;
+  background-color: rgba(255, 0, 0, 0.62);
+}
+
+#newTaskName,
+.update-task-input {
+  border-radius: 0;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  transition: border 0.3, box-shadow 0.3s;
+}
+
+#newTaskName:focus,
+.update-task-input:focus {
+  border: 1px solid #707070;
+  outline: none;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

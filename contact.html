@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proyecto CV</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="images/cv.png" class="cv">
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="index.html" class="navbar-link">Inicio</a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html#quien-soy" class="navbar-link">Quien Soy</a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html#estudios" class="navbar-link">Estudios</a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html#experiencia" class="navbar-link">Experiencia</a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html#sobre-mi" class="navbar-link">Sobre Mi</a>
+            </li>
+            <li class="navbar-item active">
+                <a href="contact.html" class="navbar-link">Contacto</a>
+            </li>
+            <li class="navbar-item">
+                <a href="tasks.html" class="navbar-link">Tareas</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section class="section-content row">
+            <h2>CONTACTA</h2>
+            <div class="col-12">
+                <form id="form-contact" class="form" name="contact-yoel" method="GET" novalidate>
+                    <div class="form-row">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+                    </div>
+                    <div class="form-row">
+                        <span>¿Como me has conocido?</span>
+                        <label for="conocer_1">Revista</label>
+                        <input type="radio" id="conocer_1" name="conocer" value="Revista" required>
+                        <label for="conocer_2">Internet</label>
+                        <input type="radio" id="conocer_2" name="conocer" value="Internet" required>
+                        <label for="conocer_3">Amigo</label>
+                        <input type="radio" id="conocer_3" name="conocer" value="Amigo" required>
+                        <label for="conocer_4">Otro</label>
+                        <input type="radio" id="conocer_4" name="conocer" value="Otro" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="numero-contacto">Numero Contacto:</label>
+                        <input type="text" id="numero-contacto" name="numero" placeholder="Numero Contacto" required>
+                    </div>
+                    <div class="form-row">
+                        <textarea id="textarea" cols="20" rows="10"></textarea>
+                        <br> Palabras que quedan: <span id="quedan">150</span>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" id="enviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        Yoel Macia Delgado &copy; 2017
+    </footer>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/tasks.js"></script>
+</body>
+
+</html>
